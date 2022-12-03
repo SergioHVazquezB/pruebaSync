@@ -1,6 +1,6 @@
 
 var url = window.location.href;
-var swLocation = '/pruebaSync/sw.js';
+var swLocation = '/pruebaSync/public/sw.js';
 
 
 if ( navigator.serviceWorker ) {
