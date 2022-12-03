@@ -1,6 +1,6 @@
 
 var url = window.location.href;
-var swLocation = '/ejemplo-sincronizacion/sw.js';
+var swLocation = '/pruebaSync/sw.js';
 
 
 if ( navigator.serviceWorker ) {
