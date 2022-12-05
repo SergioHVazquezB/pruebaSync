@@ -1,21 +1,23 @@
 
 var url = window.location.href;
-var swLocation = '/pruebaSync/public/sw.js';
+// var swLocation = '/pruebaSync/public/sw.js';
+
+
+// if ( navigator.serviceWorker ) {
+
+
+//     if ( url.includes('localhost') ) {
+//         swLocation = 'https://sergiohvazquezb.github.io/pruebaSync/public/sw.js';
+//     }
+
+
+//     navigator.serviceWorker.register( swLocation );
+// }
 
 
 if ( navigator.serviceWorker ) {
-
-
-    if ( url.includes('localhost') ) {
-        swLocation = '/sw.js';
-    }
-
-
-    navigator.serviceWorker.register( swLocation );
+    navigator.serviceWorker.register( "https://sergiohvazquezb.github.io/pruebaSync/public/sw.js" );
 }
-
-
-
 
 
 // Referencias de jQuery
