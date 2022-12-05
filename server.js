@@ -10,12 +10,11 @@ const port = process.env.PORT || 3000;
 app.use( bodyParser.json() );
 app.use( bodyParser.urlencoded( {extended :true} ) );
 
-app.use(express.static(rutaPublica));
-
 //RUTAS
 const rutas = require("./rutas");
 app.use("/api", rutas);
 
+app.use(express.static(rutaPublica));
 
 app.listen(port, error =>{
     if(error) throw new Error( error );
